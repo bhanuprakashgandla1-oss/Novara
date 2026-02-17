@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Novara | Growth Infrastructure</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Inter', sans-serif;
+}
+
+body{
+    background:#f5f7fa;
+    color:#111;
+    line-height:1.6;
+}
+
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+}
+
+/* NAV */
+nav{
+    position:fixed;
+    width:100%;
+    top:0;
+    background:#ffffff;
+    border-bottom:1px solid #e5e7eb;
+    z-index:1000;
+    padding:18px 0;
+}
+
+.nav-wrapper{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.brand{
+    font-size:20px;
+    font-weight:600;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:30px;
+}
+
+nav a{
+    text-decoration:none;
+    color:#555;
+    font-size:14px;
+}
+
+nav a:hover{
+    color:#000;
+}
+
+/* HERO */
+.hero{
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    text-align:center;
+    padding:110px 20px 60px 20px;
+}
+
+.hero img{
+    width:260px;
+    margin-bottom:35px;
+    mix-blend-mode:multiply;
+}
+
+.hero h1{
+    font-size:52px;
+    font-weight:600;
+    max-width:900px;
+    margin-bottom:20px;
+    line-height:1.15;
+}
+
+.hero p{
+    max-width:700px;
+    font-size:18px;
+    color:#555;
+}
+
+/* SECTION */
+.section{
+    padding:100px 0;
+}
+
+.section h2{
+    font-size:34px;
+    margin-bottom:20px;
+}
+
+.product{
+    margin-top:50px;
+    padding:40px;
+    background:#ffffff;
+    border-radius:12px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.05);
+    transition:0.3s ease;
+}
+
+.product:hover{
+    transform:translateY(-5px);
+}
+
+.product h3{
+    font-size:24px;
+    margin-bottom:8px;
+}
+
+.tagline{
+    font-weight:500;
+    margin-bottom:10px;
+}
+
+.philosophy{
+    font-weight:600;
+    margin-top:10px;
+}
+
+/* CTA */
+.cta{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:100px 20px;
+}
+
+.cta h2{
+    font-size:30px;
+    margin-bottom:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:14px 32px;
+    background:linear-gradient(90deg,#6a11cb,#2575fc);
+    color:#fff;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:40px 0;
+    color:#777;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    .hero h1{
+        font-size:32px;
+    }
+
+    .hero img{
+        width:200px;
+    }
+
+    nav ul{
+        display:none;
+    }
+
+    .product{
+        padding:25px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <div class="container nav-wrapper">
+        <div class="brand">Novara</div>
+        <ul>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#about">About</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <img src="novara-logo.jpeg" alt="Novara Logo">
+    <h1>Building the Infrastructure for Modern Growth</h1>
+    <p>Novara designs the next-generation growth ecosystem for the digital era — connecting learning, discipline, and income into a unified system.</p>
+</section>
+
+<section class="section container" id="products">
+    <h2>Our Ecosystem</h2>
+
+    <div class="product">
+        <h3>VIREON</h3>
+        <div class="tagline">Learning Built for the Scroll Generation</div>
+        <p>Vireon leverages short-form engagement mechanics with structured learning paths and AI-powered reinforcement.</p>
+        <div class="philosophy">Core Philosophy: Make scrolling productive.</div>
+    </div>
+
+    <div class="product">
+        <h3>ARISE</h3>
+        <div class="tagline">Discipline, Engineered</div>
+        <p>Arise structures daily effort and builds measurable consistency across study, fitness, and finance.</p>
+        <div class="philosophy">Core Philosophy: Consistency compounds.</div>
+    </div>
+
+    <div class="product">
+        <h3>VIBEPOST</h3>
+        <div class="tagline">From Skill to Income</div>
+        <p>Vibepost connects skill-validated individuals to real-world projects.</p>
+        <div class="philosophy">Core Philosophy: Knowledge should pay.</div>
+    </div>
+</section>
+
+<section class="section container" id="about">
+    <h2>About Novara</h2>
+    <p>Novara is designing the next-generation growth ecosystem for the digital era.</p>
+    <p>We are rebuilding the infrastructure that connects learning, discipline, and income.</p>
+</section>
+
+<section class="cta">
+    <h2>Build With Novara</h2>
+    <a href="#" class="btn">Get In Touch</a>
+</section>
+
+<footer>
+    © 2026 Novara. All rights reserved.
+</footer>
+
+</body>
+</html>
