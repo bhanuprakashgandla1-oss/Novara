@@ -147,11 +147,21 @@ nav a:hover{
     margin-bottom:20px;
 }
 
+.cta select{
+    padding:12px 15px;
+    border-radius:6px;
+    border:none;
+    margin-bottom:20px;
+    font-size:14px;
+}
+
 .btn{
     display:inline-block;
     padding:14px 32px;
     background:linear-gradient(90deg,#6a11cb,#2575fc);
     color:#fff;
+    border:none;
+    cursor:pointer;
     text-decoration:none;
     border-radius:6px;
 }
@@ -234,19 +244,50 @@ footer{
 </section>
 
 <section class="cta">
-    <h2>Build With Novara</h2>
-    <a href="mailto:yourmail@example.com?subject=Novara Inquiry&body=Hello,%0D%0A%0D%0AI would like to connect regarding Novara.%0D%0A" class="btn">
-        Get In Touch
-    </a>
+    <h2>Join The Revolution Journey</h2>
+
+    <select id="productSelect">
+        <option value="">Select Product</option>
+        <option value="vireon">Vireon</option>
+        <option value="arise">Arise</option>
+        <option value="vibepost">Vibepost</option>
+    </select>
+    <br>
+    <button onclick="contactTeam()" class="btn">Get In Touch</button>
 </section>
 
 <footer>
     © 2026 Novara. All rights reserved.
 </footer>
 
-</body>
-</html>
+<script>
+function contactTeam() {
+    const product = document.getElementById("productSelect").value;
+
+    if (!product) {
+        alert("Please select a product first.");
+        return;
+    }
+
+    let email = "";
+    let subject = "";
+
+    if (product === "vireon") {
+        email = "sathwikrdy2008@gmail.com";
+        subject = "Inquiry Regarding Vireon";
+    }
+    else if (product === "arise") {
+        email = "vrk142308@gmail.com";
+        subject = "Inquiry Regarding Arise";
+    }
+    else if (product === "vibepost") {
+        email = "vibepost61@gmail.com";
+        subject = "Inquiry Regarding Vibepost";
+    }
+
+    window.location.href = `mailto:${email}?subject=${encodeURIComponent(subject)}&body=Hello,%0D%0A%0D%0AI would like to connect regarding ${subject}.%0D%0A`;
+}
+</script>
 
 </body>
 </html>
-
